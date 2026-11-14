@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>�������� ����������</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print { body { font-size: 10.5pt !important; padding: 0 !important; max-width: none !important }
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <style>
+  @page { size: A4; margin: 14mm }
+  body { font-family: "Segoe UI","Noto Sans","DejaVu Sans",Arial,sans-serif; font-size: 10.5pt; line-height: 1.45; color:#1d1d1f; background:#fff; max-width: 900px; margin: 0 auto; }
+  h1 { font-size: 19pt; margin: 0 0 6px; color:#0b4f6c }
+  h2 { font-size: 13pt; margin: 18px 0 6px; color:#0b4f6c; border-bottom: 1px solid #d6e4ea; padding-bottom: 3px }
+  table { border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 8.5pt; margin: 6px 0; word-wrap: break-word }
+  thead th:first-child { width: 31% }
+  th, td { border: 1px solid #c9d6dc; padding: 4px 5px; text-align: center; vertical-align: top }
+  td:first-child, th:first-child { text-align: left }
+  th { background: #eef4f7 }
+  tr:nth-child(2) td { background: #fff7e0 }
+  h2#шешім + p { background:#fff7e0; border-left: 4px solid #e0a800; padding: 8px 10px; border-radius: 4px }
+  em { color:#555 }
+  </style>
+</head>
+<body>
+<h1 id="алқа-есебі-1-млн-теңгені-қайда-салу-керек">Алқа есебі: 1 млн
+теңгені қайда салу керек?</h1>
+<p><strong>Күні:</strong> 2026-11-14</p>
+<p><strong>Сұрақ:</strong> 1 миллион теңгем бар. Айфон алайын ба, бизнес
+бастайын ба, әлде акция алайын ба?</p>
+<p><strong>Жағдай:</strong> Шымкент. Қолда 1 000 000 ₸ бар. Табыс айына
+~200 000 ₸, ал шығын белгісіз. Қарыз 12 000 000 ₸, пайызы белгісіз.
+Кеңесшілер оны тұтынушылық несие деп, жылдық пайызын 25–40% деп болжады.
+iPhone 17 Pro Max бұрыннан бар. Дағдылары: vibe coding, бизнесті
+автоматтандыру, көлік жүргізу. Мақсаты: ақшаны көбейту.</p>
+<h2 id="шешім">Шешім</h2>
+<p><strong>B. Үшке бөлу:</strong> ~500 мың ₸ ең қымбат несиені
+мерзімінен бұрын өтеуге, ~350 мың ₸ қауіпсіздік қорына, ~150 мың ₸
+автоматтандыру бизнесін 90 күн сынауға.</p>
+<p>Келісім күшті, бірақ толық емес. Бірінші орынға B мен A жақын келді:
+орташа ұпайлары 8,4 және 8,3. Жеңісті B-ға шешуші дауыстың саны берді: 7
+кеңесшінің 5-еуі B-ны таңдады. <strong>iPhone</strong> нұсқасын ешкім
+қарастырмады, себебі ол бұрыннан бар. <strong>Акцияны</strong> бәрі бір
+ауыздан қабылдамады: орташа ұпайы 1,1.</p>
+<h2 id="ұпайлар-кестесі">Ұпайлар кестесі</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="width:28%">Нұсқа</th>
+<th>Безос</th>
+<th>Баффет</th>
+<th>Гэри Ви</th>
+<th>Грэм</th>
+<th>Хормози</th>
+<th>Мартелл</th>
+<th>Уикман</th>
+<th>Орташа</th>
+<th>Мин–Макс</th>
+<th>Бірінші таңдау</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="width:28%"><strong>A.</strong> Қарызға басымдық: ~600–700 мың несиеге, ~300 мың
+қорға, бизнесті 0 ₸-мен бастау</td>
+<td>8</td>
+<td>9</td>
+<td>8</td>
+<td>9</td>
+<td>8</td>
+<td>8</td>
+<td>8</td>
+<td>8,3</td>
+<td>8–9</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td style="width:28%"><strong>B.</strong> Үшке бөлу: ~500 мың несиеге, ~350 мың қорға,
+~150 мың 90 күндік бизнес тестіне</td>
+<td>9</td>
+<td>7</td>
+<td>9</td>
+<td>7</td>
+<td>9</td>
+<td>9</td>
+<td>9</td>
+<td><strong>8,4</strong></td>
+<td>7–9</td>
+<td><strong>5</strong></td>
+</tr>
+<tr class="odd">
+<td style="width:28%"><strong>C.</strong> Бизнес пен қорға басымдық: ~300 мың бизнеске,
+~700 мың қорға, несиені ерте өтемеу</td>
+<td>4</td>
+<td>3</td>
+<td>4</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>4</td>
+<td>3,9</td>
+<td>3–5</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td style="width:28%"><strong>D.</strong> Акция немесе индекс қоры: ~700 мың+ акцияға</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>1,1</td>
+<td>1–2</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="кім-келіспеді-және-неге">Кім келіспеді және неге</h2>
+<ul>
+<li><strong>Баффет (A):</strong> «150 мың ₸ клиентсіз жұмсалса, қайтып
+келмейді. Бизнесті ақшамен емес, біліммен бастаңыз».</li>
+<li><strong>Пол Грэм (A):</strong> «Бизнеске ақша клиент алдын ала
+төлегеннен кейін ғана жұмсалуы керек. Сонда ол сіздің емес, клиенттің
+ақшасы болады».</li>
+</ul>
+<p>Екеуі де B-ға 7 ұпай берді. Яғни B-ны қабылдамайды, тек 150 мыңды
+бірінші төлем түскенше ұстап тұруды талап етеді.</p>
+<h2 id="негізгі-ойлар">Негізгі ойлар</h2>
+<ul>
+<li><strong>Баффет:</strong> 30%-дық қарызды өтеу тәуекелсіз 30% табыс
+береді. 12 млн қарызбен акция алу кемедегі тесікті бітемей, жаңа желкен
+сатып алумен бірдей.</li>
+<li><strong>Хормози:</strong> 1 млн қарыздың небәрі 8%-ы, ал 200 мың
+табыспен 12 млн-ды жаба алмайсыз. Қарызды тек табыс өсуі жабады, яғни
+төлейтін клиенттер керек.</li>
+<li><strong>Безос:</strong> Шығыстар белгісіз. Қорсыз қалсаңыз, кешіккен
+бір төлем қайтып оралмайтын есікке айналады: айыппұл түседі, несие
+тарихы бұзылады.</li>
+<li><strong>Гэри Ви:</strong> Ақша назарға емес, құралдарға кетсін:
+WhatsApp API, хостинг, AI жазылымдары. Жарнама, логотип, курс үшін бір
+теңге де жұмсамаңыз. Жұмысыңызды видеоға түсіріңіз.</li>
+<li><strong>Хормози, Безос, Грэм:</strong> Нишаны тар таңдаңыз, мысалы
+Шымкенттегі автосервистер мен автожуулар. Сіз өзіңіз жүргізушісіз, бұл
+ортаны білесіз.</li>
+<li><strong>Уикман:</strong> Бір Rock (90 күндік басты мақсат): 14
+ақпанға дейін 3 ақылы клиент. Әр апта үш санды бақылаңыз: қоңыраулар,
+демо, төлемдер.</li>
+</ul>
+<h2 id="пікірталас">Пікірталас</h2>
+<ul>
+<li><strong>Безос</strong> Мартеллге қарсы шықты: клиент төлемей тұрып
+300 мың салу дегеніміз өнімнен бастау. Гэри Ви мен Грэмнің «ақшасыз
+бастауға болады» деген ойы оны ішінара сендірді. Хормозидің автосервис
+нишасын қолдады.</li>
+<li><strong>Баффет</strong> Хормози мен Мартеллге қарсы: тексерілмеген
+идеяға ақша салуға болмайды. Уикман мен Безостың 90 күндік тест идеясы
+оны жартылай сендірді, бірақ A-да қалды.</li>
+<li><strong>Гэри Ви</strong> Мартелл мен C-ға қарсы: ешкім сатып алмаған
+өнімге ақша құюға болмайды. Пікірін өзгертті: «0 ₸» шынайы емес,
+сондықтан 150 мыңға келісті, бірақ тек құралдарға.</li>
+<li><strong>Пол Грэм</strong> Хормози мен Мартеллге қарсы: алғашқы
+клиентке ақша емес, 10 кездесу керек. Хормозидің нишасы оны
+сендірді.</li>
+<li><strong>Хормози</strong> Мартеллге (C) және Гэри Видің 900 мыңын
+түгел қарызға беру идеясына қарсы. Безос пен Уикман оны резервті 300–350
+мыңға көтеруге көндірді.</li>
+<li><strong>Мартелл</strong> Гэри Виге қарсы: 900 мыңды қарызға
+берсеңіз, касса нөлге түседі. Өз пікірін өзгертті: бизнеске 300 мың көп,
+150 мың жеткілікті.</li>
+<li><strong>Уикман</strong> Гэри Ви мен Хормозиге қарсы: резервсіз
+немесе процессіз ақша жұмсауға болмайды. 150 мыңды тек құралдарға
+жұмсауды, ал жұмсалмай қалғанын 90 күннен кейін қарызға салуды
+ұсынды.</li>
+</ul>
+<h2 id="келесі-қадамдар-730-күн">Келесі қадамдар (7–30 күн)</h2>
+<ol type="1">
+<li><strong>Осы аптада:</strong> барлық несиені бір кестеге жазыңыз:
+сомасы, жылдық пайызы, айлық төлемі, мерзімінен бұрын өтеудің айыппұлы.
+Ең қымбатын табыңыз. Айлық шығыстарыңызды да есептеңіз.</li>
+<li><strong>Ақшаны бөліңіз:</strong> ~500 мың ₸ ең қымбат несиеге
+(айыппұлы жоқ болса). ~350 мың ₸ бөлек депозитке, қорға. ~150 мың ₸
+бөлек шотқа, тек құралдар үшін (WhatsApp API, AI жазылымдары,
+хостинг).</li>
+<li><strong>1–2 апта:</strong> Шымкенттегі 10–20 автосервиске,
+автожууға, кафеге барыңыз немесе жазыңыз. Олардың жиі айтатын бір
+мәселесін табыңыз: жазылу, еске салу, Kaspi төлемі. Біріне тегін немесе
+арзан пилот жасаңыз.</li>
+<li><strong>2–4 апта:</strong> Ұсыныс жасаңыз. Мысалы: орнату 150–250
+мың ₸ және ай сайын 30–50 мың ₸ қолдау ақысы. Мүмкін болса, алдын ала
+төлем алыңыз. Әр жобаны видеоға және нұсқаулыққа (playbook)
+жазыңыз.</li>
+<li><strong>Әр апта:</strong> қоңыраулар, демо, төлемдер санын жазып
+отырыңыз. Мақсат: 14 ақпанға дейін 3 ақылы клиент. 90 күннен кейін 150
+мыңнан қалғаны қарызға кетеді.</li>
+</ol>
+<hr />
+<p><em>Кеңесшілер нағыз адамдар емес. Бұл олардың ашық материалдарынан
+жасалған AI еліктеу. Оны ойлануға көмекші құрал ретінде қолданыңыз,
+кәсіби кеңес деп қабылдамаңыз.</em></p>
+</body>
+</html>
